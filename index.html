@@ -1,24 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>（你的团队名）- 人机交互实验项目</title>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessGo - 无障碍行项目网站</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #475569;
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin: 15px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .team-member {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-  <h1>（你的团队名）</h1>
-  <p>（项目提案描述：如“本项目围绕TechTrio和TrafficTighten展开，旨在调研用户需求，优化产品交互体验”）</p>
-  
-  <h2>一、团队介绍</h2>
-  <p>成员1：XXX（职责：如访谈设计、网站搭建）</p>
-  <p>成员2：XXX（职责：如问卷设计、数据整理）</p>
-  
-  <h2>二、项目提案</h2>
-  <p>1. 项目目标：调研TechTrio和TrafficTighten的用户需求，提出交互优化方案；</p>
-  <p>2. 解决问题：（如“现有功能复杂，用户操作门槛高”）；</p>
-  <p>3. 预期成果：形成用户需求报告，输出优化原型。</p>
-  
-  <h2>三、数据收集计划</h2>
-  <p>1. 访谈：采访4位潜在用户（3位对应TechTrio/TrafficTighten，1位补充），设计追问问题（如“你觉得哪个功能最复杂？为什么？”）；</p>
-  <p>2. 问卷：收集10位用户原始数据，涵盖需求偏好、使用习惯等维度，后续整理为表格提交。</p>
+    <!-- 头部：团队名称与项目简介概览 -->
+    <header>
+        <h1>Team Name: AccessGo（无障碍行）</h1>
+        <p>Project Overview: Design a personalized accessible navigation app for people with mobility impairments, solving the lack of dynamic accessibility information in current mapping services.</p>
+    </header>
+
+    <!-- 第一部分：团队介绍 (Team Intro) -->
+    <div class="section" id="team-intro">
+        <h2>1. Team Introduction</h2>
+        <p>Our team consists of 4 members with clear division of labor, focusing on user demand research and accessible navigation app design for people with mobility impairments. The detailed information of each member is as follows:</p>
+        
+        <div class="team-member">
+            <h3>Member 1</h3>
+            <ul>
+                <li>Name: 王凌杰 (Wang Lingjie)</li>
+                <li>Student ID: 202222130203</li>
+                <li>Responsibilities: Interview design, organizing user interview processes, and recording interview transcripts</li>
+            </ul>
+        </div>
+
+        <div class="team-member">
+            <h3>Member 2</h3>
+            <ul>
+                <li>Name: 龙正潇 (Long Zhengxiao)</li>
+                <li>Student ID: 202200130265</li>
+                <li>Responsibilities: Questionnaire design, collecting and sorting raw questionnaire data</li>
+            </ul>
+        </div>
+
+        <div class="team-member">
+            <h3>Member 3</h3>
+            <ul>
+                <li>Name: 孙夕雯 (Sun Xiwen)</li>
+                <li>Student ID: 202200130034</li>
+                <li>Responsibilities: Website construction, ensuring the website contains required content and is accessible</li>
+            </ul>
+        </div>
+
+        <div class="team-member">
+            <h3>Member 4</h3>
+            <ul>
+                <li>Name: 刘婉雨 (Liu Wanyu)</li>
+                <li>Student ID: 202200130057</li>
+                <li>Responsibilities: Data analysis, summarizing insights from interviews and questionnaires to support app function design</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 第二部分：项目提案 (Project Proposal) -->
+    <div class="section" id="project-proposal">
+        <h2>2. Project Proposal</h2>
+        <h3>2.1 Project Name</h3>
+        <p>AccessMap (Accessible Navigation Map)</p>
+
+        <h3>2.2 Project Background & Objectives</h3>
+        <p>Current mainstream navigation apps (e.g., Baidu Maps, Amap, Apple Maps) lack dynamic and user-specific accessibility information. People with mobility impairments—such as wheelchair users, visually impaired individuals, the elderly with arthritis, and temporarily injured people—often encounter barriers like blocked accessible ramps, out-of-service elevators, and discontinuous tactile paving during travel, leading to travel frustration or even giving up going out.</p>
+        <p>The core objective of this project is to design the AccessMap app, which integrates crowdsourced data, sensor feedback, and smart device integration to provide <strong>real-time, reliable, and personalized accessible route planning</strong>. It aims to solve the problem of insufficient dynamic accessibility information in current mapping services and improve the travel convenience and safety of people with mobility impairments.</p>
+
+        <h3>2.3 Target Users</h3>
+        <ul>
+            <li>Long-term mobility-impaired groups: Wheelchair users, visually impaired individuals (using canes or screen-reading software)</li>
+            <li>Age-related mobility-impaired groups: Elderly people over 60 with mild arthritis (using canes)</li>
+            <li>Temporary mobility-impaired groups: People with fractures or ligament strains (using crutches temporarily)</li>
+            <li>Indirect users: Ordinary people who take care of relatives with mobility impairments</li>
+        </ul>
+
+        <h3>2.4 Core Functions (Preliminary Design)</h3>
+        <ul>
+            <li>Real-time accessibility status update: Display real-time status of facilities like elevators, ramps, and tactile paving (e.g., "elevator in normal use," "ramp blocked")</li>
+            <li>Personalized route planning: Customize routes based on user types (e.g., wheelchair users avoid steps, visually impaired users prioritize continuous tactile paving)</li>
+            <li>One-click emergency assistance: Connect to family members, 120 emergency services, or nearby volunteers with real-time location sharing</li>
+            <li>Voice + vibration navigation: Provide clear voice prompts (with adjustable speed) and smartwatch vibration reminders (left turn vibrates left, right turn vibrates right) for visually impaired users and wheelchair users</li>
+            <li>Crowdsourced information reporting: Allow users to upload photos or text reports of accessibility barriers (e.g., "narrow ramp at convenience store") with simplified operation (e.g., voice reporting for the elderly)</li>
+        </ul>
+    </div>
+
+    <!-- 第三部分：数据收集计划 (Data Collection Plan: Interview/Survey) -->
+    <div class="section" id="data-collection-plan">
+        <h2>3. Data Collection Plan</h2>
+        <p>To verify user needs and pain points, and provide a basis for app function design, we conducted two types of data collection: user interviews and questionnaires. The detailed plan and implementation results are as follows:</p>
+
+        <h3>3.1 Interview Plan</h3>
+        <h4>3.1.1 Interview Objectives</h4>
+        <p>Deeply understand the travel pain points, existing navigation app experience, and functional expectations of core target users (wheelchair users, visually impaired individuals, the elderly, temporarily injured people).</p>
+
+        <h4>3.1.2 Interview Objects</h4>
+        <ul>
+            <li>1 wheelchair user (64-year-old Ms. Li, long-term wheelchair user)</li>
+            <li>1 visually impaired individual (45-year-old Mr. Zhang, congenital visual impairment, using cane + screen-reading software)</li>
+            <li>1 elderly person (68-year-old Grandpa Wang, mild arthritis, using cane)</li>
+            <li>1 temporarily injured person (28-year-old Mr. Zhao, left leg fracture, using crutches for 1 month)</li>
+            <li>Total: 4 potential users, covering all core target user groups</li>
+        </ul>
+
+        <h4>3.1.3 Interview Process & Content</h4>
+        <ul>
+            <li>Intro (5 mins): Explain the purpose of the interview, duration (20-25 mins), confidentiality commitment, and obtain user consent for recording</li>
+            <li>Warm-up (5 mins): Understand daily travel methods, travel scenarios (e.g., going to hospital, shopping), and use of current navigation apps</li>
+            <li>Main Body (15 mins): Focus on 3 topics with follow-up questions:
+                <ul>
+                    <li>Topic 1: Mobility challenges (recent travel barriers, coping methods, cases of giving up going out)</li>
+                    <li>Topic 2: Information trust (ways to confirm accessibility facilities, trust in user-shared information, preferences for voice/vibration prompts)</li>
+                    <li>Topic 3: Functional expectations (priority factors for route planning, willingness to participate in crowdsourcing, interface interaction suggestions)</li>
+                </ul>
+            </li>
+            <li>Closing (5 mins): Collect additional user suggestions and thank users for their participation</li>
+        </ul>
+
+        <h4>3.1.4 Interview Results</h4>
+        <p>Completed 4 interview transcripts, collected key insights such as:
+        <ul>
+            <li>Wheelchair users need real-time updates on elevator/ramp status and accessible toilet locations</li>
+            <li>Visually impaired individuals require accurate voice prompts with distance information (e.g., "turn left after 10 meters") and vibration navigation</li>
+            <li>The elderly prefer large buttons, large fonts, and a "senior mode" (simplified functions like "check bus," "find toilet")</li>
+            <li>Temporarily injured people expect route planning to avoid steps/narrow ramps and link to ride-hailing software</li>
+        </ul>
+
+        <h3>3.2 Survey Plan</h3>
+        <h4>3.2.1 Survey Objectives</h4>
+        <p>Quantify user needs, verify interview insights, and understand the willingness to use the app and functional preferences of a larger range of potential users.</p>
+
+        <h4>3.2.2 Survey Objects</h4>
+        <ul>
+            <li>Total: 10 potential users, covering 5 user types:
+                <ul>
+                    <li>2 wheelchair users</li>
+                    <li>2 visually impaired individuals</li>
+                    <li>3 elderly people (over 60)</li>
+                    <li>2 temporarily injured people</li>
+                    <li>1 ordinary person (taking care of wheelchair-using relatives)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>3.2.3 Survey Content</h4>
+        <ul>
+            <li>Basic information: Age group, user type, weekly travel frequency, commonly used navigation apps</li>
+            <li>Accessibility needs: Frequency of confirming accessibility routes before going out, pain points of current navigation apps</li>
+            <li>Functional preferences: Willingness to use the AccessMap app, importance ranking of core functions (e.g., real-time status, one-click emergency assistance)</li>
+            <li>Interaction preferences: Preferred text size, interaction methods (e.g., touch screen, voice control), trust in user-shared information</li>
+            <li>Concerns & suggestions: Worries about crowdsourced information (e.g., outdated information, privacy leakage) and suggestions for app optimization</li>
+        </ul>
+
+        <h4>3.2.4 Survey Results</h4>
+        <p>Collected 10 sets of raw questionnaire data, with key quantitative conclusions:
+        <ul>
+            <li>80% of respondents are "very willing" or "relatively willing" to use the AccessMap app</li>
+            <li>Top 3 important functions: Real-time elevator/ramp status (8 users ranked top 2), one-click emergency assistance (100% of the elderly/temporarily injured ranked top 3), voice + vibration navigation (100% of visually impaired individuals ranked top 1)</li>
+            <li>Interaction preferences: The elderly prefer "larger text" + "voice control"; visually impaired individuals prefer "adjustable text size" + "gesture + voice"; others prefer "standard text size" + "touch screen control"</li>
+            <li>Crowdsourcing willingness: 100% of wheelchair users/visually impaired individuals are willing to participate in crowdsourcing; 60% of the elderly are unwilling (due to complex operations)</li>
+        </ul>
+    </div>
 </body>
 </html>
